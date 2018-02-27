@@ -7,7 +7,6 @@ DaCiDian is an open-sourced chinese mandarin lexicon for Automatic Speech Recogn
 The lexicon is structured by two mappers:
 
 ### 1. Word -> Syllabel Mapper (DaCiDian.txt)
-For a chinese word with three pronunciations:
 
 * word and its pronunciations are seperated by __tab__
 * multiple pronunciations are seperated by __;__
