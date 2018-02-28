@@ -1,16 +1,26 @@
 # DaCiDian (大词典) 
 
-DaCiDian is an open-sourced chinese mandarin lexicon for Automatic Speech Recognition
+DaCiDian is an open-sourced lexicon for Chinese Automatic Speech Recognition(ASR)
 
 ---
+## Design
 
-The lexicon is structured by two mappers:
+In mainstream ASR system, lexicon is a core component, that maps word into acoustic modeling units(such as phone).  In DaCiDian, we break the mapping into 2 independent layers:
+```
+word --> PinYin syllable --> phoneme
+```
 
-### 1. Word -> Syllabel Mapper (DaCiDian.txt)
+The purpose of this design is as follows:
+* Anyone who is familiar with PinYin (basically every mandarin speaker), can enrich DaCiDian's vocabulary, by adding new entry(word) into the layer-1 mapping.
 
-* word and its pronunciations are seperated by __tab__
+* ASR system developers can easily adapt DaCiDian to their own phone set by defining their own layer-2 mapping.
+
+---
+### Layer-1: Word -> Syllable Mapper (DaCiDian.txt)
+
+* word and its pronunciation(s) are seperated by __tab__
 * multiple pronunciations are seperated by __;__
-* each pronunciation is a sequence of Chinese PinYin syllabels, which are seperated by __space__
+* each pronunciation is a sequence of Chinese PinYin syllables, seperated by __space__
 * tone infomation are encoded into 0,1,2,3,4
 
 examples:
@@ -25,8 +35,8 @@ examples:
 傅里叶变换 FU_4 LI_3 YE_4 BIAN_4 HUAN_4
 ```
     
-### 2. Syllabel->Phone Mapper (pinyin_to_if.txt)
-pinyin_to_if is a user-defined mapping from PinYin syllabels to desired phone set
+### Layer-2: Syllabel->Phone Mapper (pinyin_to_if.txt)
+pinyin_to_if is a user-defined mapping from PinYin syllables to target phone set
 
 Take traditional PinYin's Initial-Final structure for example, a mapping should be defined as follows:
 ```
@@ -52,10 +62,9 @@ ZUN	z un
 ZUO	z uo
 ```
 
-* __tab__ is used to seperate syllable and its phoneme representation
-* __$0__ is the NULL-Initial phone
+* syllable and its phoneme representation are seperated by __tab__ 
+* __$0__ is the NULL-Initial phone.
 
+---
 ## Notes
-* users can customize syllable->phone mapper to construct a Chinese lexicon with their own phone set.
-
 * English word pronunciation in Chinese context *is* a problem, at the moment, we would rather leave it alone. 
