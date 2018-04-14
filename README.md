@@ -16,7 +16,7 @@ The purpose of this design is as follows:
 * ASR system developers can easily adapt DaCiDian to their own phone set by defining their own layer-2 mapping.
 
 ---
-### Layer-1: Word -> Syllable Mapper (DaCiDian.txt)
+### Layer-1: Word -> Syllable Mapper (word_to_pinyin.txt)
 
 * word and its pronunciation(s) are seperated by __tab__
 * multiple pronunciations are seperated by __;__
@@ -35,8 +35,8 @@ examples:
 傅里叶变换 FU_4 LI_3 YE_4 BIAN_4 HUAN_4
 ```
     
-### Layer-2: Syllabel->Phone Mapper (pinyin_to_if.txt)
-pinyin_to_if is a user-defined mapping from PinYin syllables to target phone set
+### Layer-2: Syllabel->Phone Mapper (pinyin_to_phone.txt)
+pinyin_to_phone is a user-defined mapping from PinYin syllables to target phone set
 
 Take traditional PinYin's Initial-Final structure for example, a mapping should be defined as follows:
 ```
