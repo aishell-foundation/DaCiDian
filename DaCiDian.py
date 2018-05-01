@@ -30,7 +30,7 @@ for l in open(word_to_syllable_file): # "15	YI_1 WU_3;YAO_1 WU_3"
 		phone_seq = []
 		for syllable in pron.split():
 			base,tone = syllable.split('_')
-			phones = syllable_to_phones[base]
+			phones = [phn for phn in syllable_to_phones[base]]
 			phones[-1] = phones[-1]+'_'+tone
 			phone_seq.extend(phones)
 		sys.stdout.write(word + '\t' + ' '.join(phone_seq) + '\n')
