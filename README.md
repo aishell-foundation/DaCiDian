@@ -67,4 +67,4 @@ ZUO	z uo
 
 ---
 ## Notes
-* English word pronunciation in Chinese context *is* a problem, at the moment, we would rather leave it alone. 
+* English word in Chinese context *is* a problem. An upgraded version covering both English and Chinese can be found here [BigCiDian](https://github.com/speechio/BigCiDian)
