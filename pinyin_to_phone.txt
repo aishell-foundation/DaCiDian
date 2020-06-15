@@ -17,7 +17,7 @@ BIAO	b iao
 BIE	b ie
 BIN	b in
 BING	b ing
-BO	b o
+BO	b uo
 BU	b u
 CA	c a
 CAI	c ai
@@ -35,7 +35,7 @@ CHAO	ch ao
 CHE	ch e
 CHEN	ch en
 CHENG	ch eng
-CHI	ch i
+CHI	ch iii
 CHONG	ch ong
 CHOU	ch ou
 CHU	ch u
@@ -45,7 +45,7 @@ CHUANG	ch uang
 CHUI	ch ui
 CHUN	ch un
 CHUO	ch uo
-CI	c i
+CI	c ii
 CONG	c ong
 COU	c ou
 CU	c u
@@ -201,7 +201,7 @@ MIE	m ie
 MIN	m in
 MING	m ing
 MIU	m iu
-MO	m o
+MO	m uo
 MOU	m ou
 MU	m u
 NA	n a
@@ -244,7 +244,7 @@ PIAO	p iao
 PIE	p ie
 PIN	p in
 PING	p ing
-PO	p o
+PO	p uo
 POU	p ou
 PU	p u
 QI	q i
@@ -267,7 +267,7 @@ RAO	r ao
 RE	r e
 REN	r en
 RENG	r eng
-RI	r i
+RI	r iii
 RONG	r ong
 ROU	r ou
 RU	r u
@@ -293,7 +293,7 @@ SHE	sh e
 SHEI	sh ei
 SHEN	sh en
 SHENG	sh eng
-SHI	sh i
+SHI	sh iii
 SHOU	sh ou
 SHU	sh u
 SHUA	sh ua
@@ -303,7 +303,7 @@ SHUANG	sh uang
 SHUI	sh ui
 SHUN	sh un
 SHUO	sh uo
-SI	s i
+SI	s ii
 SONG	s ong
 SOU	s ou
 SU	s u
@@ -386,7 +386,7 @@ ZHE	zh e
 ZHEI	zh ei
 ZHEN	zh en
 ZHENG	zh eng
-ZHI	zh i
+ZHI	zh iii
 ZHONG	zh ong
 ZHOU	zh ou
 ZHU	zh u
@@ -397,7 +397,7 @@ ZHUANG	zh uang
 ZHUI	zh ui
 ZHUN	zh un
 ZHUO	zh uo
-ZI	z i
+ZI	z ii
 ZONG	z ong
 ZOU	z ou
 ZU	z u
